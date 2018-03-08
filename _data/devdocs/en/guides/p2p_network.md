@@ -193,7 +193,7 @@ to all zeroes to request a maximum-size response.
 
 Upon receipt of the `getblocks` message, the sync node takes the first
 (and only) header hash and searches its local best block chain for a
-block with that header hash. It finds that block 0 matches, so it
+block with that header hash. It finds that block 0 matches the given header hash. So it
 replies with 500 block inventories (the maximum response to a
 `getblocks` message) starting from block 1. It sends these inventories
 in the `inv` message illustrated below.
